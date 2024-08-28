@@ -64,3 +64,28 @@ function reverse(arr) {
 console.log(reverse(array));
 
 
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let doublearr = arr.map((val) => {
+    return val * 2
+})
+console.log(doublearr);
+
+let str = ['apple', 'mango', 'grapes']
+str.forEach((val, i) => {
+    let n = `string is ${val} and index is ${i}`
+    console.log(n);
+})
+
+let add = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let newAdd = add.reduce((pre, curr) => {
+    return pre + curr
+})
+console.log(newAdd);
+
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let even = num.filter((val) => {
+    return val % 2 === 0
+})
+console.log(even);
+
+
