@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #A02334;
+        }
+
+        p {
+            font-weight: 600;
+        }
+
+        .categorie {
+            color: #A02334;
+
+        }
+
+        .container {
+            text-align: center;
+            padding: 60px;
+            background-color: #FFEEAD;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .emoji {
+            font-size: 72px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 18px;
+            background-color: #A02334;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            .emoji {
+                font-size: 56px;
+            }
+
+            button {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="emoji">😂</div>
+        <h3 class="categorie"></h3>
+        <p class="joke"></p>
+        <button onclick="getJoke()" class="btn">Get a Random Joke 😂</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
